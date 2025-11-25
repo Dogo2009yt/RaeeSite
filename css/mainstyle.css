@@ -1,0 +1,129 @@
+body {
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("https://img.esg360.it/wp-content/uploads/2024/01/24111121/Riciclo-RAEE.jpg") center/cover;
+    color: white;
+    font-family: "Stack Sans Text", sans-serif;
+    background-repeat:repeat;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 120px;
+}
+
+#navbar {
+    position: sticky;
+    left: 0;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 90px;
+    box-sizing: border-box;
+    overflow: visible; 
+    z-index: 10;
+}
+#navbar a{
+    position: relative;
+    top:10px;
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    transform: translateX(-50%);
+    background: rgba(40, 40, 40, 0.95);
+    min-width: 180px;
+    max-width: 90vw;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+    z-index: 0;
+}
+
+.dropdown-content a {
+    padding: 10px 20px;
+    display: block;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background: #FFD700;
+    color: black;
+    border-radius: 8px;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#accent {
+    height: 15px;
+    width: 100%;
+    background: linear-gradient(90deg, #ff0000, #FFA500);
+}
+
+footer{
+    text-align: center;
+    width: 100%;
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 25px 15px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9;
+}
+footer h1{
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.card{
+    position: absolute;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 0;
+    color: white;
+    cursor: pointer;
+}
+.card:hover {
+    transform: translateY(-5px);
+    scale: 1.1;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.8);
+}
+
+.card p {
+    color:white;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.card h2{
+    color:white
+}
